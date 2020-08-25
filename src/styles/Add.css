@@ -1,0 +1,208 @@
+.addContainer{
+    position: relative;
+    float: right;
+    right: 0;
+    background-color: #FFFFFF;
+    height:90vh;
+    width:90%;
+    padding: 20px;
+    border-radius: 40px;
+    overflow-y: scroll;
+    align-content: center;
+    animation: translate 1s;
+}
+
+.addContainer .cross{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addContainer .cross span {
+    position: absolute;
+    align-self: flex-start;
+    width: 30px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+    
+    
+}
+
+.addContainer .cross:hover  span {
+    background-color: #FF4D50;
+}
+.addContainer .cross span:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+}
+
+.addContainer .cross:hover span:nth-child(1) {
+    width: 15px;
+    transform: translateY(10px) translateX(-9px) rotate(135deg);
+}
+
+.addContainer .cross span:nth-child(2) {
+    transform: translateY(15px) rotate(45deg);
+}
+
+.addContainer .cross:hover span:nth-child(2) {
+    width: 15px;
+    transform: translateY(20px) translateX(-9px) rotate(45deg);
+}
+
+.addContainer .cross span:nth-child(3) {
+    transform: translateY(15px) rotate(-45deg);
+}
+
+.addContainer .cross:hover span:nth-child(3) {
+    transform: translateY(15px);
+}
+
+.addButtonContainer{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    padding:10px;
+    transition: 0.5s;
+    width:60px;
+    height:60px;
+    overflow: hidden;
+    margin:10px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+@keyframes expand{
+    from {
+        width:60px;
+    }
+    to {width: 80%;
+    }
+}
+
+.addButtonContainer:hover{
+    width: 80%;
+    cursor: pointer;
+    animation: expand 0.5s ;
+}
+
+.addButtonContainer span{
+    position: absolute;
+    
+    width: 40px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.addButtonContainer:hover  span {
+    background-color: #277c33;
+}
+.addButtonContainer:hover .text{
+    visibility: visible;
+}
+.addButtonContainer span:nth-child(1) {
+    transform: rotate(90deg);
+}
+.addButtonContainer:hover  span:nth-child(1) {
+    transform: translateX(calc(-39vw + 30px)) rotate(180deg);
+}
+
+.addButtonContainer:hover  span:nth-child(2) {
+    transform: translateX(calc(-39vw + 30px)) rotate(-90deg);
+}
+
+.addButtonContainer .text{
+    visibility: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    margin:auto;
+    color: #666;
+    
+}
+
+
+
+.DateRangePicker__MonthHeader{
+    background-color: #FF4D50;
+}
+
+.DateRangePicker__MonthHeaderLabel{
+    color: #FFFFFF;
+}
+
+.DateRangePicker__PaginationArrow:hover{
+    background-color: #fd7072;
+}
+
+
+.addContainer .addButtonContainer{
+    background-color: #FF4D50 ;
+}
+
+.addContainer .addButtonContainer span{   
+    background-color: #FFFFFF;
+}
+.addContainer .addButtonContainer:hover  span {
+    background-color: #497c50;
+}
+.addContainer .addButtonContainer:hover .text{
+    visibility: visible;
+}
+
+.addContainer .addButtonContainer:hover  span:nth-child(1) {
+    transform: translateX(calc(-35vw + 40px)) rotate(180deg);
+}
+
+.addContainer .addButtonContainer:hover  span:nth-child(2) {
+    transform: translateX(calc(-35vw + 40px)) rotate(-90deg);
+}
+
+.eq_add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF4D50;
+    border-radius: 40px;
+    padding:10px;
+    transition: 0.5s;
+    width:90%;
+    height:30px;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.eq_add span {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.eq_add span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.eq_add:hover span:nth-child(1) {
+    height:7px;
+}
+
+.eq_add span:nth-child(2) {
+    transform:  rotate(135deg); 
+}
+
+.eq_add:hover span:nth-child(2) {
+    height:7px;
+}

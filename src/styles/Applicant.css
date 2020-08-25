@@ -1,0 +1,76 @@
+.ApplicantContainer{
+    margin-top:10px;
+    width:100%;
+    background:#FFFFFF;
+    border-radius:15px;
+    font-family:roboto;
+    height: 50px;
+    font-size:32px;
+    padding:10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.ApplicantContainer:hover{
+    height:auto;
+    min-height:50px;
+}
+
+.extras{
+    visibility: collapse;
+}
+
+.ApplicantContainer:hover .extras{
+    visibility: visible;
+}
+
+
+.applicantCross{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.applicantCross span {
+    position: absolute;
+    align-self: flex-start;
+    width: 60px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+    
+    
+}
+
+.applicantCross:hover  span {
+    background-color: white;
+}
+.applicantCross span:nth-child(1) {
+    transform: translateY(30px) rotate(45deg);
+}
+
+.applicantCross:hover span:nth-child(1) {
+    width: 30px;
+    transform: translateY(20px) translateX(-18px) rotate(135deg);
+}
+
+.applicantCross span:nth-child(2) {
+    transform: translateY(30px) rotate(45deg);
+}
+
+.applicantCross:hover span:nth-child(2) {
+    width: 30px;
+    transform: translateY(40px) translateX(-18px) rotate(45deg);
+}
+
+.applicantCross span:nth-child(3) {
+    transform: translateY(30px) rotate(-45deg);
+}
+
+.applicantCross:hover span:nth-child(3) {
+    transform: translateY(30px);
+}

@@ -1,0 +1,71 @@
+.cross{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cross span {
+    position: absolute;
+    align-self: flex-start;
+    width: 30px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+    
+    
+}
+
+.cross:hover  span {
+    background-color: #FF4D50;
+}
+.cross span:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+}
+
+.cross:hover span:nth-child(1) {
+    width: 15px;
+    transform: translateY(10px) translateX(-9px) rotate(135deg);
+}
+
+.cross span:nth-child(2) {
+    transform: translateY(15px) rotate(45deg);
+}
+
+.cross:hover span:nth-child(2) {
+    width: 15px;
+    transform: translateY(20px) translateX(-9px) rotate(45deg);
+}
+
+.cross span:nth-child(3) {
+    transform: translateY(15px) rotate(-45deg);
+}
+
+.cross:hover span:nth-child(3) {
+    transform: translateY(15px);
+}
+
+ .addButtonContainer{
+    background-color: #FF4D50 ;
+}
+
+ .addButtonContainer span{   
+    background-color: #FFFFFF;
+}
+ .addButtonContainer:hover  span {
+    background-color: #497c50;
+}
+ .addButtonContainer:hover .text{
+    visibility: visible;
+}
+
+ .addButtonContainer:hover  span:nth-child(1) {
+    transform: translateX(calc(-35vw + 40px)) rotate(180deg);
+}
+
+ .addButtonContainer:hover  span:nth-child(2) {
+    transform: translateX(calc(-35vw + 40px)) rotate(-90deg);
+}

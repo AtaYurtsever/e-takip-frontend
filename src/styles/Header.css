@@ -1,0 +1,12 @@
+.Header {
+    justify-content: center;
+    align-items: center;
+    
+    width:90%;
+    background: #ffffff;
+    margin: 10px;
+    padding:5px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
