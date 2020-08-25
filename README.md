@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# E-Takip front end
+Acts as the front end for the E-Takip system
 
 ## Available Scripts
 
