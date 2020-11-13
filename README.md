@@ -1,4 +1,4 @@
-# E-Takip front-end
+# E-Takip front end
 Acts as the front end for the E-Takip system
 
 ## Available Scripts
